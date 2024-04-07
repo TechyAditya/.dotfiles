@@ -1,0 +1,24 @@
+CompileFlags:
+    Add: [
+        -isystem,
+        /usr/include/c++/11,
+        -isystem,
+        /usr/include/c++/11/backward,
+        -isystem,
+        /usr/local/include,
+        -isystem,
+        /usr/include,
+        -isystem,
+        /usr/include/x86_64-linux-gnu/c++/11,
+        -isystem,
+        /usr/include/c++/12,
+        -isystem,
+        /usr/include/c++/12/backward,
+        -isystem,
+        /usr/include/x86_64-linux-gnu/c++/12,
+        -isystem,
+        /usr/lib/gcc/x86_64-linux-gnu/11/include,
+        -isystem,
+        /usr/lib/gcc/x86_64-linux-gnu/12/include,
+    ]
+
