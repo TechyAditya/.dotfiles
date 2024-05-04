@@ -136,3 +136,13 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+source /home/aditya/perl5/perlbrew/etc/bashrc
+# -- START ACTIVESTATE INSTALLATION
+export PATH="/home/aditya/.local/ActiveState/StateTool/release/bin:$PATH"
+# -- STOP ACTIVESTATE INSTALLATION
+# -- START ACTIVESTATE DEFAULT RUNTIME ENVIRONMENT
+export PATH="/home/aditya/.cache/activestate/bin:$PATH"
+if [[ ! -z "$ACTIVESTATE_ACTIVATED" && -f "$ACTIVESTATE_ACTIVATED/activestate.yaml" ]]; then
+  echo "State Tool is operating on project $ACTIVESTATE_ACTIVATED_NAMESPACE, located at $ACTIVESTATE_ACTIVATED"
+fi
+# -- STOP ACTIVESTATE DEFAULT RUNTIME ENVIRONMENT

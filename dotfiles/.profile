@@ -26,3 +26,6 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 . "$HOME/.cargo/env"
+## START ACTIVESTATE AUTOSTART
+"/home/aditya/.local/ActiveState/StateTool/release/bin/state-svc" start "--autostart"
+## STOP ACTIVESTATE AUTOSTART
