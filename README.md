@@ -7,7 +7,7 @@ sudo apt update
 
 # C/C++
 sudo apt install build-essential gdb
-cd /usr/include/x86_64-linux-gnu/c++/11/bits/
+cd /usr/include/x86_64-linux-gnu/c++/13/bits/
 sudo g++ ./stdc++.h
 
 # Rust
@@ -19,8 +19,8 @@ wget https://go.dev/dl/go1.22.0.linux-amd64.tar.gz && rm -rf /usr/local/go && ta
 ```
 ### Neovim
 ```bash
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-tar -C ~/apps/ -xzf nvim-linux64.tar.gz
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+tar -C ~/apps/ -xzf nvim-linux-x86_64.tar.gz
 ```
 ### Packer.nvim
 ```bash
@@ -31,8 +31,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 ### Node.js
 ```bash
-# Nodejs 21
-curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash - &&\
+# Nodejs 22
+# https://deb.nodesource.com/
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo bash -
 sudo apt-get install -y nodejs
 
 # Not confirmed dependency

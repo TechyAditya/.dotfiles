@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=$PATH:/home/aditya/anaconda3/bin:/usr/local/bin:/home/aditya/apps/nvim-linux64/bin
+export PATH=$PATH:/home/aditya/anaconda3/bin:/usr/local/bin:/home/aditya/apps/nvim-linux-x86_64/bin
 alias vim="nvim"
 #eval "$(oh-my-posh init bash --config ~/docs/themes/emodipt-extend.omp.json)"
 . "$HOME/.cargo/env"
